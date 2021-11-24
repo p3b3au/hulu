@@ -12,6 +12,8 @@ header{
     text-align: center;
 }
 
+
+/* C'est quoi ce main avec une majuscule ;) */
 Main{
     background: url(./img/handmaids_main-1280x720-1.jpg), linear-gradient(0.25turn, #A63740, black 50%);
     background-size: contain;
@@ -33,7 +35,7 @@ Main{
 
 #tv>li:first-child {
     list-style: none;
-
+    /* Plutot list-style-type pour un li, le list-style est prévu pour le ul => https://developer.mozilla.org/fr/docs/Web/CSS/list-style-type */
   }
 
 #tv>li{
