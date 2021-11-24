@@ -1,11 +1,16 @@
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: ;
     background-color: #A63740 ;
     color: white;
     height: 40px;
-    align-items: center;
+    align-items: center ;
     }
+
+.title1{
+    flex: 1;
+    text-align: center;
+}
 
 Main{
     background: url(./img/handmaids_main-1280x720-1.jpg), linear-gradient(0.25turn, #A63740, black 50%);
@@ -15,8 +20,18 @@ Main{
     height: 500px;   
     display: flex;  
     flex-direction: row;
-    justify-content: start;
-             
+    justify-content: start;       
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style:none
+}
+
+li{
+    margin-right: 20px ;
+    
 }
 
 #left{
@@ -46,6 +61,8 @@ i{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 footer{
@@ -53,12 +70,15 @@ footer{
     background-color: #1D2126;
     color: white;
     flex-direction: column;
-}
+    }
+
 
 .imgslide{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
  
