@@ -23,13 +23,20 @@ Main{
     justify-content: start;       
 }
 
-ul{
+#tv{
     display: flex;
     flex-direction: row;
-    list-style:none
+    text-align: left;
+    margin-left: 0px;
+    padding-left: 0px;
 }
 
-li{
+#tv>li:first-child {
+    list-style: none;
+
+  }
+
+#tv>li{
     margin-right: 20px ;
     
 }
@@ -60,9 +67,30 @@ i{
 .nav_foot{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content:left;
+    list-style: none;
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    
+}
+
+.nav_foot>li{
+    margin-right: 20px;
+       
+   }
+
+.nav_foot>li:hover {
+    border-bottom: 3px solid white;
+    margin-bottom: -3px;
+       
+      }
+
+figure{
+    margin: 0px;
+    padding: 0px;
 }
 
 footer{
@@ -79,6 +107,7 @@ footer{
     justify-content: space-between;
     margin-left: 20px;
     margin-right: 20px;
+    
 }
 
  
