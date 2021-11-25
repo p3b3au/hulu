@@ -23,8 +23,7 @@ header{
 }
 
 
-/* C'est quoi ce main avec une majuscule ;) */
-Main{
+main{
     background: url(./img/handmaids_main-1280x720-1.jpg), linear-gradient(0.25turn, #A63740, black 50%);
     background-size: contain;
     background-position:right;
@@ -124,14 +123,6 @@ footer{
     flex-wrap: wrap;
     
 }
-
-/* codes mediaqueries  
- @media (max-width: 700px){
-     .imgslide{
-         flex-direction: column;
-     }
- }
-_____________
 
 
 /* couleurs ------  
