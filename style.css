@@ -1,6 +1,13 @@
-body{
-    margin: 0px;
-  }
+@media (min-width: 1300px){
+    body{
+        width: 1300px;
+        margin: auto;
+}
+}
+
+html {
+    background-color: #1D2126;
+}
 
 header{
     display: flex;
@@ -38,11 +45,13 @@ Main{
 
 #tv>li:first-child {
     list-style: none;
+    margin-left: 0px;
     /* Plutot list-style-type pour un li, le list-style est prévu pour le ul => https://developer.mozilla.org/fr/docs/Web/CSS/list-style-type */
   }
 
 #tv>li{
-    margin-right: 20px ;
+    padding-right: 20px ;
+    margin-left: 10px;
     
 }
 
