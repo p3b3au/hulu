@@ -121,16 +121,24 @@ footer{
         grid-area: 2/1/3/2;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         margin-left: 20px;
         margin-right: 20px;
         flex-wrap: wrap;
+               
 }
 
 figure{
         margin: 0px;
-        padding: 0px;
+        padding: 10px;
     }
+figure:first-of-type{
+    padding-left: 0;
+}
+
+figure:last-of-type{
+    padding-right: 0;
+}
 
 @media (min-width: 1300px){
     body{
