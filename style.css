@@ -1,9 +1,10 @@
-@media (min-width: 1300px){
-    body{
-        width: 1300px;
-        margin: auto;
+
+body{
+    display:grid;
+    grid-template-columns: 40px 500px 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
 }
-}
+
 
 html {
     background-color: #1D2126;
@@ -11,10 +12,10 @@ html {
 }
 
 header{
+    grid-area: 1/1/2/5;
     display: flex;
     background-color: #A63740 ;
     color: white;
-    height: 40px;
     align-items: center ;
     }
 
@@ -25,13 +26,11 @@ header{
 
 
 main{
+    grid-area: 2/1/3/5;
     background: url(./img/handmaids_main-1280x720-1.jpg), linear-gradient(0.25turn, #A63740, black 50%);
     background-size: contain;
     background-position:right;
     background-repeat: no-repeat;
-    height: 500px;   
-    display: flex;  
-    flex-direction: row;
     justify-content: start;       
 }
 
@@ -56,19 +55,26 @@ main{
 }
 
 #left{
+    grid-area: 2/1/3/2;
     display: flex;
     align-items: center;
     margin-left: 20px;
 }
 
 #right{
+    grid-area: 2/2/3/5;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
     color: white;
     margin-left: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 60px;   
+}
+
+#right>div{
+    width: inherit;
+    flex-wrap: wrap;
 }
 
 i{
@@ -79,6 +85,7 @@ i{
 }
 
 .nav_foot{
+    grid-area: 3/1/4/5;
     display: flex;
     flex-direction: row;
     justify-content:left;
@@ -116,6 +123,7 @@ footer{
 
 
 .imgslide{
+    grid-area: 4/1/5/5;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -125,6 +133,12 @@ footer{
     
 }
 
+@media (min-width: 1300px){
+    body{
+        width: 1300px;
+        margin: auto;
+}
+}
 
 /* couleurs ------  
     #21252A
